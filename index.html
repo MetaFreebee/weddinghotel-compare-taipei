@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台北婚宴住宿指南｜10月1–4日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --ink: #1a1a2e;
+    --paper: #faf8f3;
+    --warm: #f5f0e8;
+    --gold: #b8941f;
+    --gold-light: #e8d48a;
+    --red: #c0392b;
+    --green: #2d6a4f;
+    --green-light: #d8f3dc;
+    --amber: #e67e22;
+    --amber-light: #fdebd0;
+    --grey: #6c757d;
+    --border: #e0d8cc;
+    --shadow: rgba(26,26,46,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 48px 40px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(184,148,31,0.04) 20px,
+      rgba(184,148,31,0.04) 40px
+    );
+  }
+  .header-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; }
+  .header-tag {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+  }
+  .header h1 {
+    font-family: 'DM Serif Display', 'Noto Serif TC', serif;
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+  .header-sub {
+    color: rgba(250,248,243,0.6);
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  /* INFO STRIP */
+  .info-strip {
+    background: var(--gold);
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .info-item .icon { font-size: 16px; }
+
+  /* ALERT BOX */
+  .alert {
+    background: #fff3cd;
+    border-left: 4px solid var(--amber);
+    margin: 28px auto;
+    max-width: 860px;
+    padding: 16px 20px;
+    font-size: 13.5px;
+    border-radius: 0 6px 6px 0;
+  }
+  .alert strong { color: var(--amber); }
+
+  /* MAIN CONTENT */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+
+  /* SECTION HEADING */
+  .section-heading {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 40px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* RECOMMENDATION BAND */
+  .rec-band {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  .rec-card {
+    border-radius: 10px;
+    padding: 20px 22px;
+    position: relative;
+    overflow: hidden;
+  }
+  .rec-card.primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .rec-card.secondary {
+    background: var(--warm);
+    border: 1px solid var(--border);
+    color: var(--ink);
+  }
+  .rec-badge {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+    opacity: 0.6;
+  }
+  .rec-card.primary .rec-badge { color: var(--gold-light); opacity: 1; }
+  .rec-card.secondary .rec-badge { color: var(--gold); }
+  .rec-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .rec-reason {
+    font-size: 13px;
+    line-height: 1.65;
+    opacity: 0.85;
+  }
+  .rec-card.primary .rec-reason { color: rgba(250,248,243,0.8); opacity: 1; }
+  .rec-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  /* HOTEL CARDS */
+  .hotel-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .hotel-card:hover { box-shadow: 0 4px 20px var(--shadow); }
+
+  .hotel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 22px 16px;
+    border-bottom: 1px solid var(--border);
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .hotel-title-group { flex: 1; }
+  .hotel-rank {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 4px;
+  }
+  .hotel-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .hotel-name-en {
+    font-size: 12px;
+    color: var(--grey);
+    letter-spacing: 0.5px;
+  }
+  .hotel-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .badge-green { background: var(--green-light); color: var(--green); }
+  .badge-amber { background: var(--amber-light); color: #9c5700; }
+  .badge-grey { background: #f0f0f0; color: #555; }
+  .badge-red { background: #fde8e8; color: var(--red); }
+
+  .hotel-meta {
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .price-label { font-size: 11px; color: var(--grey); margin-bottom: 4px; }
+  .price-value {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .price-sub { font-size: 11px; color: var(--grey); margin-top: 3px; }
+
+  .hotel-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .hotel-col {
+    padding: 18px 22px;
+  }
+  .hotel-col:first-child {
+    border-right: 1px solid var(--border);
+  }
+  .col-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .detail-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 13px;
+    margin-bottom: 7px;
+    line-height: 1.5;
+  }
+  .detail-icon { flex-shrink: 0; margin-top: 1px; }
+  .pros-cons { list-style: none; }
+  .pros-cons li {
+    font-size: 13px;
+    padding: 3px 0;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .pros-cons li.pro::before { content: '＋'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+  .pros-cons li.con::before { content: '－'; position: absolute; left: 0; color: var(--red); font-weight: 700; }
+
+  .verdict-strip {
+    background: var(--warm);
+    border-top: 1px solid var(--border);
+    padding: 12px 22px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .verdict-strip strong { color: var(--ink); }
+
+  /* SCORE BAR */
+  .score-section { margin-bottom: 6px; }
+  .score-label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+  .score-label-row span:last-child { font-weight: 600; color: var(--ink); }
+  .score-bar-bg {
+    height: 6px;
+    background: #e8e4dc;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--gold);
+    transition: width 0.6s ease;
+  }
+
+  /* SUMMARY TABLE */
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .summary-table thead tr {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .summary-table thead th {
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .summary-table thead th:not(:first-child) { text-align: center; }
+  .summary-table tbody tr:nth-child(even) { background: var(--warm); }
+  .summary-table tbody tr:hover { background: var(--gold-light); opacity: 0.9; }
+  .summary-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+  .summary-table td:not(:first-child) { text-align: center; }
+  .summary-table td:first-child { font-weight: 500; }
+  .check { color: var(--green); font-size: 15px; }
+  .cross { color: var(--red); font-size: 15px; }
+  .partial { color: var(--amber); font-size: 14px; }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--grey);
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+  }
+
+  /* TABS */
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin: 32px 0 0;
+    position: sticky;
+    top: 0;
+    background: var(--paper);
+    z-index: 10;
+    padding-top: 12px;
+  }
+  .tab-btn {
+    padding: 12px 22px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--grey);
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active {
+    color: var(--ink);
+    border-bottom-color: var(--gold);
+    font-weight: 600;
+  }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* WORKER TABLE */
+  .worker-intro {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .worker-intro strong { color: var(--ink); }
+  .role-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+  }
+  .role-guest { background: #e8f4fd; color: #1a6fa8; }
+  .role-worker { background: #fde8f0; color: #a81a5a; }
+
+  .worker-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .worker-card:hover { box-shadow: 0 4px 20px var(--shadow); }
+  .worker-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .worker-rank { font-size: 11px; color: var(--grey); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 3px; font-weight: 600; }
+  .worker-name { font-family: 'Noto Serif TC', serif; font-size: 17px; font-weight: 600; line-height: 1.3; margin-bottom: 6px; }
+  .worker-card-body { display: grid; grid-template-columns: 1fr 1fr; }
+  .worker-col { padding: 16px 20px; font-size: 13px; line-height: 1.6; }
+  .worker-col:first-child { border-right: 1px solid var(--border); }
+  .worker-verdict {
+    background: var(--warm);
+    border-top: 1px solid var(--border);
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+
+  /* WORKER SUMMARY TABLE */
+  .worker-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .worker-table thead tr { background: #4a1a3a; color: var(--paper); }
+  .worker-table thead th { padding: 11px 13px; text-align: left; font-weight: 500; font-size: 12px; }
+  .worker-table thead th:not(:first-child) { text-align: center; }
+  .worker-table tbody tr:nth-child(even) { background: var(--warm); }
+  .worker-table tbody tr:hover { background: #fde8f0; }
+  .worker-table td { padding: 10px 13px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  .worker-table td:not(:first-child) { text-align: center; }
+  .worker-table td:first-child { font-weight: 500; }
+  .not-rec { color: var(--grey); font-style: italic; font-size: 12px; }
+
+  @media (max-width: 600px) {
+    .rec-band { grid-template-columns: 1fr; }
+    .hotel-body { grid-template-columns: 1fr; }
+    .hotel-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+    .hotel-header { flex-direction: column; }
+    .hotel-meta { text-align: left; }
+    .info-strip { gap: 16px; }
+    .summary-table { font-size: 12px; }
+    .summary-table td, .summary-table th { padding: 9px 8px; }
+    .worker-card-body { grid-template-columns: 1fr; }
+    .worker-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+    .tab-btn { padding: 10px 14px; font-size: 12px; }
+  }
+
+
+  /* NAV BAR */
+  .site-nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    height: 52px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .site-nav-logo {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .site-nav-links {
+    display: flex;
+    gap: 4px;
+  }
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    background: transparent;
+    color: rgba(250,248,243,0.6);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .nav-btn:hover {
+    color: var(--paper);
+    background: rgba(255,255,255,0.08);
+  }
+  .nav-btn.active {
+    background: var(--gold);
+    color: var(--ink);
+    font-weight: 600;
+    border-color: var(--gold);
+  }
+
+  /* PAGE SECTIONS */
+  body { padding-top: 52px; }
+  .page-section { display: none; }
+  .page-section.active { display: block; }
+
+  @media (max-width: 500px) {
+    .site-nav { padding: 0 12px; }
+    .site-nav-logo { font-size: 11px; }
+    .nav-btn { padding: 6px 12px; font-size: 12px; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- FIXED NAV BAR -->
+<nav class="site-nav">
+  <div class="site-nav-logo">台北婚宴住宿 · 10月1–4日</div>
+  <div class="site-nav-links">
+    <button class="nav-btn active" onclick="showPage('guests', this)">🎊 婚宴嘉賓</button>
+    <button class="nav-btn" onclick="showPage('workers', this)">🎵 工作人員</button>
+  </div>
+</nav>
+
+<!-- GUEST PAGE -->
+<div id="page-guests" class="page-section active">
+<div class="header">
+  <div class="header-inner">
+    <div class="header-tag">婚宴嘉賓住宿指南</div>
+    <h1>台北婚宴嘉賓住宿<br>10月1–4日</h1>
+    <p class="header-sub">台北文華東方婚宴 · 雙床房 × 3間</p>
+  </div>
+</div>
+
+<div class="info-strip">
+  <div class="info-item"><span class="icon">🗓</span> 10月1日入住 → 10月4日退房（3晚）</div>
+  <div class="info-item"><span class="icon">🎊</span> 婚宴：台北文華東方酒店</div>
+  <div class="info-item"><span class="icon">🛏</span> 需雙床房 × 3間</div>
+  <div class="info-item"><span class="icon">🚇</span> 優先捷運5分鐘內步行</div>
+  <div class="info-item"><span class="icon">↩️</span> 需可彈性取消退款</div>
+</div>
+
+<div class="container">
+  <div class="alert">
+    ⚠️ <strong>重要提示：</strong> 10月1–4日為台灣國慶連假黃金週，房價比平日高。以下已加入實際查詢價格（含稅）。訂房請選擇<strong>可彈性取消退款</strong>的房型以防萬一，Agoda 及各酒店官網均有提供此選項。
+  </div>
+
+<!-- RECOMMENDATIONS -->
+  <div class="section-heading">🏆 首選推薦</div>
+  <div class="rec-band">
+    <div class="rec-card primary">
+      <div class="rec-badge">賓客首選（已確認）</div>
+      <div class="rec-name">ILLUME 茹㬢酒店</div>
+      <div class="rec-reason">Agoda 實際查詢 NT$5,596/晚（含稅），捷運小巨蛋站步行4–5分鐘，去婚宴的士約5–7分鐘。翻新後新淨寬敞，有泳池、健身房、蒸氣室，是本次行程性價比最高的選擇。訂房請選彈性取消房型。</div>
+      <div class="rec-tag">✅ 賓客首選</div>
+    </div>
+    <div class="rec-card secondary">
+      <div class="rec-badge">如ILLUME額滿，備選</div>
+      <div class="rec-name">台北商旅慶城館<br>或 松山意舍酒店</div>
+      <div class="rec-reason">慶城館 Agoda NT$5,020/晚，捷運1分鐘，去婚宴5分鐘，米其林推薦，含早餐。松山意舍官網含早＋彈性取消 NT$4,774/晚，有免費洗衣，捷運2分鐘，去婚宴稍遠約10分。</div>
+      <div class="rec-tag">備選方案</div>
+    </div>
+  </div>
+
+  <div class="section-heading">📋 所有選項逐間比較</div>
+
+  <!-- 1. 慶城館 -->
+  <div class="hotel-card">
+    <div class="hotel-header">
+      <div class="hotel-title-group">
+        <div class="hotel-rank">備選 #1 · 精品商旅</div>
+        <div class="hotel-name">台北商旅慶城館</div>
+        <div class="hotel-name-en">Les Suites Taipei Ching-Cheng</div>
+        <div class="hotel-badges">
+          <span class="badge badge-green">✓ 捷運1分鐘</span>
+          <span class="badge badge-green">✓ 含早餐</span>
+          <span class="badge badge-green">✓ 米其林推薦</span>
+          <span class="badge badge-green">✓ 可彈性取消</span>
+        </div>
+      </div>
+      <div class="hotel-meta">
+        <div class="price-label">雙床房（含稅）/晚</div>
+        <div class="price-value">NT$5,020</div>
+        <div class="price-sub">Agoda 實際查詢價</div>
+      </div>
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-col">
+        <div class="col-label">地理 & 交通</div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>南京復興站（棕線＋綠線）步行 <strong>1分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方婚宴：的士約 <strong>5分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">📍</span><span>松山區慶城街，東區商圈中心</span></div>
+        <div class="detail-row"><span class="detail-icon">🌙</span><span>遼寧夜市步行7分鐘</span></div>
+
+        <div class="col-label" style="margin-top:16px">評分</div>
+        <div class="score-section">
+          <div class="score-label-row"><span>捷運便利度</span><span>5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>設施品質</span><span>5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>預算符合度</span><span>2/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:40%"></div></div>
+        </div>
+      </div>
+      <div class="hotel-col">
+        <div class="col-label">優缺點</div>
+        <ul class="pros-cons">
+          <li class="pro">步行1分鐘到捷運，雙線交匯，去哪都方便</li>
+          <li class="pro">含每日豐盛早餐，省去早餐費用</li>
+          <li class="pro">下午5時 Happy Hour，免費酒水＋熱食</li>
+          <li class="pro">2018–2019 米其林指南認可，服務口碑極佳</li>
+          <li class="pro">有精緻雙床房（Superior Twin Room）</li>
+          <li class="pro">一樓交誼廳全天供應咖啡、茶及點心</li>
+          <li class="con">房價是清單中最貴，假期會再升</li>
+          <li class="con">只有70間客房，旺季需盡早預訂</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip">💬 <strong>適合：</strong>預算有彈性、重視服務品質及早餐、希望一切省心的團隊</div>
+  </div>
+
+  <!-- 2. 兄弟大飯店 -->
+  <div class="hotel-card">
+    <div class="hotel-header">
+      <div class="hotel-title-group">
+        <div class="hotel-rank">備選 #2 · 老牌四星</div>
+        <div class="hotel-name">兄弟大飯店</div>
+        <div class="hotel-name-en">Brother Hotel Taipei</div>
+        <div class="hotel-badges">
+          <span class="badge badge-green">✓ 捷運1分鐘</span>
+          <span class="badge badge-green">✓ 7間餐廳</span>
+          <span class="badge badge-green">✓ 免費停車</span>
+          <span class="badge badge-amber">⚠ 裝潢較舊</span>
+        </div>
+      </div>
+      <div class="hotel-meta">
+        <div class="price-label">雙床房估價/晚</div>
+        <div class="price-value">NT$6,700+</div>
+        <div class="price-sub">≈ NT$6,700+（官網定價）</div>
+      </div>
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-col">
+        <div class="col-label">地理 & 交通</div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>南京復興站（棕線＋綠線）步行 <strong>1分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方婚宴：的士約 <strong>5分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">📍</span><span>南京東路三段，鄰近小巨蛋</span></div>
+        <div class="detail-row"><span class="detail-icon">✈️</span><span>松山機場車程5分鐘</span></div>
+
+        <div class="col-label" style="margin-top:16px">評分</div>
+        <div class="score-section">
+          <div class="score-label-row"><span>捷運便利度</span><span>5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>設施品質</span><span>3.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>預算符合度</span><span>2/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:40%"></div></div>
+        </div>
+      </div>
+      <div class="hotel-col">
+        <div class="col-label">優缺點</div>
+        <ul class="pros-cons">
+          <li class="pro">館內7間餐廳（日、粵、台、川、鐵板燒等），不出酒店也吃得到，方便省時</li>
+          <li class="pro">捷運1分鐘，去任何景點都方便</li>
+          <li class="pro">含早餐自助餐，250間客房較易訂到</li>
+          <li class="pro">免費停車，有接機服務</li>
+          <li class="pro">設免治馬桶、羽絨床品，舒適度不低</li>
+          <li class="con">建築及裝潢較老，1979年開業</li>
+          <li class="con">部分評價指景觀一般、房間偏暗</li>
+          <li class="con">餐廳用餐時段大廳較嘈雜</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip">💬 <strong>最適合：</strong>想要交通最便利、不想出門覓食、住宿一站式解決的團隊</div>
+  </div>
+
+  <!-- 3. ILLUME -->
+  <div class="hotel-card">
+    <div class="hotel-header">
+      <div class="hotel-title-group">
+        <div class="hotel-rank">✅ 賓客首選（已確認） · 翻新四星</div>
+        <div class="hotel-name">ILLUME 茹㬢酒店</div>
+        <div class="hotel-name-en">ILLUME Taipei</div>
+        <div class="hotel-badges">
+          <span class="badge badge-green">✓ 捷運4–5分鐘</span>
+          <span class="badge badge-green">✓ 泳池健身房</span>
+          <span class="badge badge-green">✓ 最符合預算</span>
+          <span class="badge badge-amber">⚠ 清潔評價參差</span>
+        </div>
+      </div>
+      <div class="hotel-meta">
+        <div class="price-label">雙床房（含稅）/晚</div>
+        <div class="price-value">NT$5,596</div>
+        <div class="price-sub">Agoda 實際查詢價</div>
+      </div>
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-col">
+        <div class="col-label">地理 & 交通</div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>小巨蛋站步行約 <strong>4–5分鐘</strong>（300公尺）</span></div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>南京復興站步行約8分鐘（雙捷運）</span></div>
+        <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方婚宴：的士約 <strong>5–7分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🏬</span><span>旁邊是微風百貨南京館＋IKEA</span></div>
+
+        <div class="col-label" style="margin-top:16px">評分</div>
+        <div class="score-section">
+          <div class="score-label-row"><span>捷運便利度</span><span>4/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>設施品質</span><span>4/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>預算符合度</span><span>3.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+      <div class="hotel-col">
+        <div class="col-label">優缺點</div>
+        <ul class="pros-cons">
+          <li class="pro">原王朝大酒店翻新，現代設計、寬敞明亮</li>
+          <li class="pro">戶外泳池、健身房（含教練）、蒸氣室</li>
+          <li class="pro">清單中最符合NT$2,800預算</li>
+          <li class="pro">鄰近小巨蛋，附近餐廳林立</li>
+          <li class="pro">雙捷運站，出行方便</li>
+          <li class="con">個別評價提到清潔細節不足（灰塵、蚊子）</li>
+          <li class="con">非精品酒店服務水準，較大眾化</li>
+          <li class="con">早餐並非免費含括（部分房型），需確認</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip">💬 <strong>最適合：</strong>預算較緊、仍想要新淨環境和齊全設施的旅客</div>
+  </div>
+
+  <!-- 4. 松山意舍 -->
+  <div class="hotel-card">
+    <div class="hotel-header">
+      <div class="hotel-title-group">
+        <div class="hotel-rank">備選 #3 · 設計酒店</div>
+        <div class="hotel-name">台北松山意舍酒店</div>
+        <div class="hotel-name-en">amba Taipei Songshan</div>
+        <div class="hotel-badges">
+          <span class="badge badge-green">✓ 捷運2分鐘</span>
+          <span class="badge badge-green">✓ 空橋連商場</span>
+          <span class="badge badge-green">✓ 彈性取消可選</span>
+          <span class="badge badge-amber">⚠ 去婚宴較遠</span>
+        </div>
+      </div>
+      <div class="hotel-meta">
+        <div class="price-label">雙床房（官網/晚）</div>
+        <div class="price-value">NT$3,850</div>
+        <div class="price-sub">不含早 · 含早＋彈性取消 NT$4,774</div>
+      </div>
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-col">
+        <div class="col-label">地理 & 交通</div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>捷運松山站＋台鐵松山站，步行 <strong>2分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方婚宴：的士約 <strong>10–12分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🏬</span><span>空橋直通CityLink商場</span></div>
+        <div class="detail-row"><span class="detail-icon">🌙</span><span>饒河街夜市步行10分鐘</span></div>
+
+        <div class="col-label" style="margin-top:16px">評分</div>
+        <div class="score-section">
+          <div class="score-label-row"><span>捷運便利度</span><span>4.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>設施品質</span><span>4/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>預算符合度</span><span>3.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+      <div class="hotel-col">
+        <div class="col-label">優缺點</div>
+        <ul class="pros-cons">
+          <li class="pro">兩鐵共構，交通方便，有空橋避免風吹日曬</li>
+          <li class="pro">設計感強，有河景/101景觀房</li>
+          <li class="pro">免費接駁車5分鐘到信義商圈</li>
+          <li class="pro">免費自助洗衣乾衣設施，長途旅客方便</li>
+          <li class="pro">饒河街夜市步行10分鐘</li>
+          <li class="pro">含早餐房型可選，另有彈性取消退款選項</li>
+          <li class="con">大廳在17樓，需轉換電梯才能進房</li>
+          <li class="con">去文華東方距離較遠，的士費略高</li>
+          <li class="con">偏松山東面，前往東區景點需多轉一站</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip">💬 <strong>值得考慮：</strong>價格合理，設施齊全，免費洗衣是加分項。去婚宴的士稍遠，但整體性價比不錯</div>
+  </div>
+
+  <!-- 5. 洛碁忠孝館 -->
+  <div class="hotel-card">
+    <div class="hotel-header">
+      <div class="hotel-title-group">
+        <div class="hotel-rank">排名 #5 · 平價商旅</div>
+        <div class="hotel-name">洛碁大飯店 忠孝館</div>
+        <div class="hotel-name-en">Green World Hotel ZhongXiao</div>
+        <div class="hotel-badges">
+          <span class="badge badge-green">✓ 捷運1–3分鐘</span>
+          <span class="badge badge-green">✓ 最廉宜之一</span>
+          <span class="badge badge-amber">⚠ 裝潢舊</span>
+          <span class="badge badge-amber">⚠ 隔音較差</span>
+        </div>
+      </div>
+      <div class="hotel-meta">
+        <div class="price-label">雙床房估價/晚</div>
+        <div class="price-value">NT$2,500–4,500</div>
+        <div class="price-sub">≈ NT$2,500–4,500</div>
+      </div>
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-col">
+        <div class="col-label">地理 & 交通</div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>忠孝敦化站3號出口步行 <strong>1–3分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方婚宴：的士約 <strong>10–12分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">🏬</span><span>旁邊有SOGO百貨、誠品書店</span></div>
+        <div class="detail-row"><span class="detail-icon">🌙</span><span>遼寧夜市附近</span></div>
+
+        <div class="col-label" style="margin-top:16px">評分</div>
+        <div class="score-section">
+          <div class="score-label-row"><span>捷運便利度</span><span>5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>設施品質</span><span>2.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>預算符合度</span><span>4/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div>
+        </div>
+      </div>
+      <div class="hotel-col">
+        <div class="col-label">優缺點</div>
+        <ul class="pros-cons">
+          <li class="pro">捷運出口附近，位置方便</li>
+          <li class="pro">價格便宜，適合預算有限旅客</li>
+          <li class="pro">旁邊有百貨、便利店，生活方便</li>
+          <li class="con">裝潢舊，整體設施較為陳舊</li>
+          <li class="con">部分評價指隔音差，影響睡眠</li>
+          <li class="con">去文華東方需10–12分鐘的士</li>
+          <li class="con">早餐選擇不多</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip">💬 <strong>適合：</strong>只是需要平價落腳點、不介意設施較舊的旅客</div>
+  </div>
+
+  <!-- 6. 洛碁建北館 -->
+  <div class="hotel-card">
+    <div class="hotel-header">
+      <div class="hotel-title-group">
+        <div class="hotel-rank">排名 #6 · 不推薦（此行程）</div>
+        <div class="hotel-name">洛碁大飯店 建北館</div>
+        <div class="hotel-name-en">Green World Hotel Jian Pei Suites</div>
+        <div class="hotel-badges">
+          <span class="badge badge-amber">⚠ 捷運5–8分鐘</span>
+          <span class="badge badge-red">✗ 部分出口有樓梯</span>
+          <span class="badge badge-green">✓ 最廉宜</span>
+        </div>
+      </div>
+      <div class="hotel-meta">
+        <div class="price-label">雙床房估價/晚</div>
+        <div class="price-value">NT$2,000–3,500</div>
+        <div class="price-sub">≈ NT$2,000–3,500</div>
+      </div>
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-col">
+        <div class="col-label">地理 & 交通</div>
+        <div class="detail-row"><span class="detail-icon">🚇</span><span>松江南京站步行約 <strong>5–8分鐘</strong>（部分出口需爬樓梯）</span></div>
+        <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方婚宴：的士約 <strong>8–10分鐘</strong></span></div>
+        <div class="detail-row"><span class="detail-icon">📍</span><span>中山區建國北路，南京商圈</span></div>
+
+        <div class="col-label" style="margin-top:16px">評分</div>
+        <div class="score-section">
+          <div class="score-label-row"><span>捷運便利度</span><span>2.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>設施品質</span><span>2.5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="score-section">
+          <div class="score-label-row"><span>預算符合度</span><span>5/5</span></div>
+          <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="hotel-col">
+        <div class="col-label">優缺點</div>
+        <ul class="pros-cons">
+          <li class="pro">清單中最便宜</li>
+          <li class="pro">房間空間相對寬敞</li>
+          <li class="con">捷運5–8分鐘，步行距離較長</li>
+          <li class="con">部分捷運出口需爬樓梯，帶行李不便</li>
+          <li class="con">設施老舊，有評價提到潮濕及霉味</li>
+          <li class="con">周邊小食選擇較少</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip">💬 <strong>此行程不推薦：</strong>捷運距離較長，設施狀況一般，不及其他選項划算</div>
+  </div>
+
+  <!-- SUMMARY TABLE -->
+  <div class="section-heading">📊 快速比較總覽</div>
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>酒店</th>
+        <th>捷運距離</th>
+        <th>去婚宴的士</th>
+        <th>含早餐</th>
+        <th>彈性取消</th>
+        <th>實際NT$/晚</th>
+        <th>整體推薦度</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#e8f7ee">
+        <td>✅ ILLUME 茹㬢（首選）</td>
+        <td>4–5分鐘</td>
+        <td>~5–7分鐘</td>
+        <td><span class="partial">△ 部分</span></td>
+        <td><span class="partial">△ 查詢</span></td>
+        <td><strong>NT$5,596</strong></td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>台北商旅慶城館</td>
+        <td>1分鐘</td>
+        <td>~5分鐘</td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓ Agoda</span></td>
+        <td><strong>NT$5,020</strong></td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>兄弟大飯店</td>
+        <td>1分鐘</td>
+        <td>~5分鐘</td>
+        <td><span class="check">✓</span></td>
+        <td><span class="partial">△ 查詢</span></td>
+        <td>估 NT$5,600+</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>松山意舍</td>
+        <td>2分鐘</td>
+        <td>~10–12分鐘</td>
+        <td><span class="partial">△ 可加選</span></td>
+        <td><span class="check">✓ 官網</span></td>
+        <td>NT$3,850–4,774</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>洛碁忠孝館</td>
+        <td>1–3分鐘</td>
+        <td>~10–12分鐘</td>
+        <td><span class="partial">△ 少</span></td>
+        <td><span class="partial">△ 查詢</span></td>
+        <td>估 NT$2,500–3,600</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>洛碁建北館</td>
+        <td>5–8分鐘</td>
+        <td>~8–10分鐘</td>
+        <td><span class="check">✓</span></td>
+        <td><span class="partial">△ 查詢</span></td>
+        <td>估 NT$2,000–3,500</td>
+        <td>⭐⭐</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert" style="margin-top:24px">
+    📌 <strong>訂房提示：</strong>標示「實際NT$/晚」為10月1–4日含稅查詢價。「估」為參考估算。△ = 部分房型含/不含，需訂房時確認。訂房時務必選擇<strong>可彈性取消退款</strong>的房型。兄弟大飯店及洛碁系列的彈性取消政策請直接在 Agoda 或官網查詢當期條款。
+  </div>
+</div>
+
+<div class="footer">
+  台北婚宴嘉賓住宿比較 · 資料整理日期：2026年5月 · 價格及設施資料僅供參考，以各酒店最新公布為準
+</div>
+</div>
+
+<!-- WORKER PAGE -->
+<div id="page-workers" class="page-section">
+<div class="header">
+  <div class="header-inner">
+    <div class="header-tag">工作人員住宿指南</div>
+    <h1>台北工作人員住宿<br>10月1–4日</h1>
+    <p class="header-sub">台北文華東方婚宴 · 需出席証婚及午宴 · 性價比排序</p>
+  </div>
+</div>
+
+<div class="info-strip">
+  <div class="info-item"><span class="icon">🗓</span> 10月1日入住 → 10月4日退房（3晚）</div>
+  <div class="info-item"><span class="icon">🎊</span> 婚宴：台北文華東方酒店</div>
+  <div class="info-item"><span class="icon">🎵</span> 需出席證婚獻唱及午宴</div>
+  <div class="info-item"><span class="icon">💡</span> 性價比優先排序</div>
+  <div class="info-item"><span class="icon">↩️</span> 建議選彈性取消退款</div>
+</div>
+
+<div class="container">
+<div class="alert" style="margin-top:20px">
+      🎵 <strong>工作人員定位：</strong>需在婚禮證婚時獻唱，並出席午宴，同時也是婚宴賓客，需準時前往文華東方。單人或雙人房均可，以<strong>性價比優先</strong>排序，捷運及的士距離同樣重要。
+    </div>
+
+    <div class="worker-intro">
+      <div style="margin-bottom:8px">
+        <span class="role-pill role-guest">🎊 婚宴嘉賓</span> 需雙床房×3間，詳情見「婚宴嘉賓住宿」分頁
+      </div>
+      <div>
+        <span class="role-pill role-worker">🎵 工作人員</span> 同為賓客，出席婚宴及午宴，單人或雙人房均可，性價比優先
+      </div>
+    </div>
+
+    <div class="section-heading">🏆 工作人員首選</div>
+    <div class="rec-band">
+      <div class="rec-card primary">
+        <div class="rec-badge">性價比＋去婚宴近</div>
+        <div class="rec-name">阿樹國際旅店</div>
+        <div class="rec-reason">NT$2,500–4,000/晚，小巨蛋站步行5分鐘，去文華東方的士僅5–7分鐘。飯店與中崙市場共構，吃喝最方便，生活機能極強，設計感好，是9間中性價比最高的選擇。</div>
+        <div class="rec-tag">性價比首選</div>
+      </div>
+      <div class="rec-card secondary">
+        <div class="rec-badge">質素升級之選</div>
+        <div class="rec-name">馥敦飯店馥寓</div>
+        <div class="rec-reason">NT$4,000+/晚，捷運中山國中站步行5分鐘，去婚宴的士約8–10分鐘。德國名床、獨立浴缸、空氣清淨機，設施遠超一般商旅，隔音極佳，含早餐，近松山機場。</div>
+        <div class="rec-tag">質素首選</div>
+      </div>
+    </div>
+
+    <div class="section-heading">📋 9間住宿逐間比較（性價比排序）</div>
+
+    <!-- 1. 洛碁建北館 -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #1 · 平價商旅</div>
+          <div class="worker-name">洛碁大飯店建北館</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 最平</span>
+            <span class="badge badge-amber">⚠ 捷運5–8分鐘</span>
+            <span class="badge badge-amber">⚠ 設施較舊</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">參考房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$2,000–3,500</div>
+          <div class="price-sub">估算，假期請直接查詢</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>松江南京站步行 <strong>5–8分鐘</strong>（部分出口需爬樓梯）</span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>8–10分鐘</strong></span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">清單中最便宜，房間空間尚可</li>
+            <li class="con">捷運距離最遠，部分出口需爬樓梯</li>
+            <li class="con">設施老舊，有評價提到潮濕及霉味</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 預算最緊的選擇，但設施狀況一般，建議優先考慮其他選項</div>
+    </div>
+
+    <!-- 2. 洛碁松山館 -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #2 · 平價商旅</div>
+          <div class="worker-name">洛碁大飯店松山館</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運10秒</span>
+            <span class="badge badge-green">✓ 含早餐</span>
+            <span class="badge badge-green">✓ 有浴缸</span>
+            <span class="badge badge-amber">⚠ 去婚宴15–18分鐘</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">參考房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$2,000–3,500</div>
+          <div class="price-sub">估算，假期請直接查詢</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>後山埤站3號出口步行 <strong>約10秒</strong>（板南藍線）</span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>15–18分鐘</strong>（跨區，9間最遠）</span></div>
+          <div class="detail-row"><span class="detail-icon">🌙</span><span>饒河街夜市步行10分鐘，部分房型可遠眺101</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">捷運出口旁，進出最方便；含早餐；每間房有浴缸</li>
+            <li class="pro">整體評價乾淨整潔，饒河夜市近</li>
+            <li class="con">去婚宴需的士15–18分鐘，9間中最遠，需提早出發</li>
+            <li class="con">位置偏松山/南港，去市中心要多轉一站</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 價錢實惠，但去婚宴最遠，記得提早出發</div>
+    </div>
+
+    <!-- 3. 洛碁忠孝館 -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #3 · 平價商旅</div>
+          <div class="worker-name">洛碁大飯店忠孝館</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運1–3分鐘</span>
+            <span class="badge badge-amber">⚠ 裝潢較舊</span>
+            <span class="badge badge-amber">⚠ 隔音較差</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">參考房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$2,500–4,500</div>
+          <div class="price-sub">估算，假期請直接查詢</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>忠孝敦化站3號出口步行 <strong>1–3分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>10–12分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🏬</span><span>旁邊有SOGO百貨、誠品書店</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">捷運近，東區商圈中心，生活方便</li>
+            <li class="con">裝潢舊，部分評價指隔音差，影響睡眠</li>
+            <li class="con">去婚宴的士約10–12分鐘</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 位置方便但設施較舊，介意隔音的旅客需留意</div>
+    </div>
+
+    <!-- 4. 阿樹國際旅店 - RECOMMENDED -->
+    <div class="worker-card" style="border-color:var(--gold); border-width:2px">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank" style="color:var(--gold)">⭐ 性價比首選 #4 · 設計商旅</div>
+          <div class="worker-name">阿樹國際旅店 ArTree Hotel</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運5分鐘</span>
+            <span class="badge badge-green">✓ 去婚宴最近之一</span>
+            <span class="badge badge-green">✓ 市場共構</span>
+            <span class="badge badge-green">✓ 免費停車</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">參考房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$2,500–4,000</div>
+          <div class="price-sub">估算，假期請直接查詢</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>小巨蛋站3號出口步行約 <strong>5分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>5–7分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🛒</span><span>飯店2樓即中崙市場，附近有全聯、屈臣氏、7-11</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">去婚宴的士距離是9間中最近之一</li>
+            <li class="pro">樓上市場隨時有平民美食，生活機能極強</li>
+            <li class="pro">森林主題設計，空間感好，有免費停車</li>
+            <li class="con">小巨蛋站非雙線，部分景點需轉車</li>
+            <li class="con">部分房型隔音一般</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 性價比最高，去婚宴近，吃喝方便，工作人員首選</div>
+    </div>
+
+    <!-- 5. 馥敦馥寓 - RECOMMENDED -->
+    <div class="worker-card" style="border-color:var(--gold); border-width:2px">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank" style="color:var(--gold)">⭐ 質素首選 #5 · 精品商旅</div>
+          <div class="worker-name">馥敦飯店馥寓（原復北館）</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運5分鐘</span>
+            <span class="badge badge-green">✓ 設施精品級</span>
+            <span class="badge badge-green">✓ 含早餐</span>
+            <span class="badge badge-green">✓ 隔音佳</span>
+            <span class="badge badge-green">✓ 近松山機場</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">參考房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$4,000+</div>
+          <div class="price-sub">假期請直接查詢</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>中山國中站步行 <strong>5分鐘</strong>（文湖棕線）</span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>8–10分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">✈️</span><span>松山機場步行10分鐘，抵台後直接入住</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">德國名床、膠囊咖啡機、獨立浴缸、空氣清淨機</li>
+            <li class="pro">隔音極好，服務細心，有代客停車，含早餐</li>
+            <li class="con">文湖線（棕線）非雙線，去婚宴建議直接搭的士</li>
+            <li class="con">價位在工作人員清單中偏高</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 重視睡眠質素和住宿體驗，預算稍有彈性時的質素首選</div>
+    </div>
+
+    <!-- 6. 松山意舍 -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #6 · 設計酒店</div>
+          <div class="worker-name">台北松山意舍酒店</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運2分鐘</span>
+            <span class="badge badge-green">✓ 空橋連商場</span>
+            <span class="badge badge-green">✓ 免費洗衣</span>
+            <span class="badge badge-amber">⚠ 去婚宴10–12分鐘</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">官網房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$3,850–4,774</div>
+          <div class="price-sub">不含早 / 含早＋彈性取消</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>捷運松山站＋台鐵松山站步行 <strong>2分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>10–12分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🏬</span><span>空橋直通CityLink商場，饒河街夜市近</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">兩鐵共構，空橋連商場，免費自助洗衣</li>
+            <li class="pro">設計感強，官網含早＋彈性取消選項</li>
+            <li class="con">去婚宴的士稍遠，約10–12分鐘</li>
+            <li class="con">大廳在17樓，需轉換電梯</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 設施不錯，但去婚宴比前幾間遠，適合對住宿有要求但預算中等的工作人員</div>
+    </div>
+
+    <!-- 7. 慶城館 -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #7 · 精品商旅</div>
+          <div class="worker-name">台北商旅慶城館</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運1分鐘</span>
+            <span class="badge badge-green">✓ 去婚宴最近</span>
+            <span class="badge badge-green">✓ 含早餐</span>
+            <span class="badge badge-amber">⚠ 工作人員角度較貴</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">雙床房（含稅）/晚</div>
+          <div class="price-value" style="font-size:18px">NT$5,020</div>
+          <div class="price-sub">Agoda 實際查詢價</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>南京復興站步行 <strong>1分鐘</strong>（雙線）</span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>5分鐘</strong></span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">與婚宴嘉賓同住，出發婚宴最易協調</li>
+            <li class="pro">含早餐、Happy Hour，米其林推薦，體驗極佳</li>
+            <li class="con">工作人員角度性價比不及前幾選項，單人住雙床房偏貴</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 若想與嘉賓統一出發去婚宴，慶城館最方便協調</div>
+    </div>
+
+    <!-- 8. ILLUME -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #8 · 翻新四星（嘉賓首選）</div>
+          <div class="worker-name">ILLUME 茹㬢酒店</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運4–5分鐘</span>
+            <span class="badge badge-green">✓ 泳池健身房</span>
+            <span class="badge badge-amber">⚠ 嘉賓已訂此間</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">雙床房（含稅）/晚</div>
+          <div class="price-value" style="font-size:18px">NT$5,596</div>
+          <div class="price-sub">Agoda 實際查詢價</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>小巨蛋站步行約 <strong>4–5分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>5–7分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🏬</span><span>旁邊微風百貨南京館</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">婚宴嘉賓首選，工作人員同住方便一起去婚宴</li>
+            <li class="pro">泳池、健身房、蒸氣室，設施齊全，翻新後新淨</li>
+            <li class="con">以工作人員性價比角度，此價位不及阿樹或馥寓</li>
+            <li class="con">個別評價提到清潔細節有待改進</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 嘉賓首選酒店，工作人員同住可省去各自找酒店的協調</div>
+    </div>
+
+    <!-- 9. 兄弟大飯店 -->
+    <div class="worker-card">
+      <div class="worker-card-header">
+        <div>
+          <div class="worker-rank">性價比 #9 · 老牌四星</div>
+          <div class="worker-name">兄弟大飯店</div>
+          <div style="margin-top:6px">
+            <span class="badge badge-green">✓ 捷運1分鐘</span>
+            <span class="badge badge-green">✓ 7間餐廳</span>
+            <span class="badge badge-green">✓ 含早餐</span>
+            <span class="badge badge-amber">⚠ 裝潢較舊</span>
+          </div>
+        </div>
+        <div class="hotel-meta">
+          <div class="price-label">參考房價/晚</div>
+          <div class="price-value" style="font-size:18px">NT$5,600+</div>
+          <div class="price-sub">估算，假期請直接查詢</div>
+        </div>
+      </div>
+      <div class="worker-card-body">
+        <div class="worker-col">
+          <div class="col-label">地理 & 交通</div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>南京復興站步行 <strong>1分鐘</strong>（雙線）</span></div>
+          <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>5分鐘</strong></span></div>
+          <div class="detail-row"><span class="detail-icon">🍽</span><span>館內7間餐廳，不出酒店都有得食</span></div>
+        </div>
+        <div class="worker-col">
+          <div class="col-label">優缺點</div>
+          <ul class="pros-cons">
+            <li class="pro">捷運1分鐘，去婚宴近，館內餐廳多，含早餐</li>
+            <li class="pro">有免費停車</li>
+            <li class="con">建築及裝潢較老，1979年開業</li>
+            <li class="con">9間中性價比最低，工作人員角度不划算</li>
+          </ul>
+        </div>
+      </div>
+      <div class="worker-verdict">💬 交通和餐飲方便，但價格最高，工作人員角度性價比最低</div>
+    </div>
+
+    <!-- SUMMARY TABLE -->
+    <div class="section-heading">📊 9間住宿快速比較（性價比排序）</div>
+    <table class="worker-table">
+      <thead>
+        <tr>
+          <th>酒店</th>
+          <th>捷運距離</th>
+          <th>去婚宴的士</th>
+          <th>含早餐</th>
+          <th>參考NT$/晚</th>
+          <th>性價比</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>洛碁建北館</td>
+          <td>5–8分鐘</td>
+          <td>~8–10分鐘</td>
+          <td><span class="check">✓</span></td>
+          <td>NT$2,000–3,500</td>
+          <td>⭐⭐⭐</td>
+          <td style="font-size:12px">最平，設施較舊</td>
+        </tr>
+        <tr>
+          <td>洛碁松山館</td>
+          <td>10秒</td>
+          <td>~15–18分鐘</td>
+          <td><span class="check">✓</span></td>
+          <td>NT$2,000–3,500</td>
+          <td>⭐⭐⭐⭐</td>
+          <td style="font-size:12px">捷運近，去婚宴最遠</td>
+        </tr>
+        <tr>
+          <td>洛碁忠孝館</td>
+          <td>1–3分鐘</td>
+          <td>~10–12分鐘</td>
+          <td><span class="partial">△ 少</span></td>
+          <td>NT$2,500–4,500</td>
+          <td>⭐⭐⭐</td>
+          <td style="font-size:12px">隔音較差，裝潢舊</td>
+        </tr>
+        <tr style="background:#e8f7ee">
+          <td><strong>⭐ 阿樹國際旅店</strong></td>
+          <td>5分鐘</td>
+          <td>~5–7分鐘</td>
+          <td><span class="partial">△ 查詢</span></td>
+          <td>NT$2,500–4,000</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td style="font-size:12px; color:var(--green)"><strong>性價比首選</strong></td>
+        </tr>
+        <tr style="background:#e8f7ee">
+          <td><strong>⭐ 馥敦飯店馥寓</strong></td>
+          <td>5分鐘</td>
+          <td>~8–10分鐘</td>
+          <td><span class="check">✓</span></td>
+          <td>NT$4,000+</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td style="font-size:12px; color:var(--green)"><strong>質素首選</strong></td>
+        </tr>
+        <tr>
+          <td>松山意舍</td>
+          <td>2分鐘</td>
+          <td>~10–12分鐘</td>
+          <td><span class="partial">△ 可加選</span></td>
+          <td>NT$3,850–4,774</td>
+          <td>⭐⭐⭐⭐</td>
+          <td style="font-size:12px">免費洗衣，含早可彈性取消</td>
+        </tr>
+        <tr>
+          <td>台北商旅慶城館</td>
+          <td>1分鐘</td>
+          <td>~5分鐘</td>
+          <td><span class="check">✓</span></td>
+          <td>NT$5,020</td>
+          <td>⭐⭐⭐⭐</td>
+          <td style="font-size:12px">與嘉賓同住，統一出發</td>
+        </tr>
+        <tr>
+          <td>ILLUME 茹㬢（嘉賓首選）</td>
+          <td>4–5分鐘</td>
+          <td>~5–7分鐘</td>
+          <td><span class="partial">△ 部分</span></td>
+          <td>NT$5,596</td>
+          <td>⭐⭐⭐⭐</td>
+          <td style="font-size:12px">嘉賓首選，同住方便</td>
+        </tr>
+        <tr>
+          <td>兄弟大飯店</td>
+          <td>1分鐘</td>
+          <td>~5分鐘</td>
+          <td><span class="check">✓</span></td>
+          <td>NT$5,600+</td>
+          <td>⭐⭐⭐</td>
+          <td style="font-size:12px">館內7間餐廳，裝潢較舊</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert" style="margin-top:24px">
+      📌 <strong>溫馨提示：</strong>工作人員若需在婚宴前彩排或準備，建議提前確認抵達時間。若與婚宴嘉賓住同一間酒店（如ILLUME或慶城館），可一起安排的士出發，省去協調。所有估算價格以國慶假期實際查詢為準。
+    </div>
+</div>
+
+<div class="footer">
+  台北工作人員住宿比較 · 資料整理日期：2026年5月 · 價格及設施資料僅供參考，以各酒店最新公布為準
+</div>
+</div>
+
+<script>
+function showPage(id, btn) {
+  document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+</script>
+
+</body>
+</html>
