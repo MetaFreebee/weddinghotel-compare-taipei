@@ -484,21 +484,97 @@
   .worker-table td:first-child { font-weight: 500; }
   .not-rec { color: var(--grey); font-style: italic; font-size: 12px; }
 
-  @media (max-width: 600px) {
-    .rec-band { grid-template-columns: 1fr; }
-    .hotel-body { grid-template-columns: 1fr; }
-    .hotel-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
-    .hotel-header { flex-direction: column; }
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    .site-nav { padding: 0 14px; height: 48px; }
+    .site-nav-logo { font-size: 12px; letter-spacing: 0; }
+    .nav-btn { padding: 7px 14px; font-size: 12px; border-radius: 5px; }
+    body { padding-top: 48px; }
+
+    /* HEADER */
+    .header { padding: 32px 20px 28px; }
+    .header h1 { font-size: 26px; }
+    .header-sub { font-size: 12px; }
+    .header-tag { font-size: 10px; padding: 4px 10px; }
+
+    /* INFO STRIP */
+    .info-strip {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 14px 16px;
+    }
+    .info-item { font-size: 12px; }
+
+    /* CONTAINER */
+    .container { padding: 0 14px 48px; }
+
+    /* ALERT */
+    .alert { font-size: 13px; padding: 14px 16px; margin: 18px 0; }
+
+    /* SECTION HEADING */
+    .section-heading { font-size: 11px; letter-spacing: 2px; margin: 28px 0 14px; }
+
+    /* REC BAND - stack vertically */
+    .rec-band { grid-template-columns: 1fr; gap: 12px; }
+    .rec-name { font-size: 15px; }
+    .rec-reason { font-size: 12.5px; }
+
+    /* HOTEL CARDS - guest page */
+    .hotel-header { flex-direction: column; gap: 8px; padding: 16px 16px 12px; }
     .hotel-meta { text-align: left; }
-    .info-strip { gap: 16px; }
-    .summary-table { font-size: 12px; }
-    .summary-table td, .summary-table th { padding: 9px 8px; }
+    .hotel-name { font-size: 16px; }
+    .hotel-name-en { font-size: 11px; }
+    .price-value { font-size: 20px; }
+    .hotel-body { grid-template-columns: 1fr; }
+    .hotel-col { padding: 14px 16px; }
+    .hotel-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+    .detail-row { font-size: 12.5px; }
+    .pros-cons li { font-size: 12.5px; }
+    .verdict-strip { font-size: 12.5px; padding: 10px 16px; }
+    .score-label-row { font-size: 11px; }
+
+    /* WORKER CARDS */
+    .worker-card-header { flex-direction: column; gap: 8px; padding: 14px 16px 12px; }
+    .worker-name { font-size: 15px; }
     .worker-card-body { grid-template-columns: 1fr; }
+    .worker-col { padding: 14px 16px; font-size: 12.5px; }
     .worker-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
-    .tab-btn { padding: 10px 14px; font-size: 12px; }
+    .worker-verdict { font-size: 12.5px; padding: 10px 16px; }
+
+    /* BADGES */
+    .badge { font-size: 10px; padding: 3px 7px; }
+
+    /* SUMMARY TABLE - guest page (7 cols) */
+    /* Make tables horizontally scrollable */
+    .summary-table, .worker-table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+    .summary-table thead, .summary-table tbody,
+    .worker-table thead, .worker-table tbody { display: table; width: 100%; }
+    .summary-table td, .summary-table th { padding: 10px 10px; }
+    .worker-table td, .worker-table th { padding: 10px 10px; }
+
+    /* WORKER INTRO */
+    .worker-intro { padding: 14px 16px; font-size: 12.5px; }
+    .role-pill { font-size: 10px; padding: 3px 8px; }
+
+    /* FOOTER */
+    .footer { font-size: 11px; padding: 18px 16px; }
   }
 
-
+  @media (max-width: 400px) {
+    .site-nav-logo { display: none; }
+    .site-nav { justify-content: center; }
+    .nav-btn { padding: 7px 20px; font-size: 13px; }
+    .header h1 { font-size: 22px; }
+  }
   /* NAV BAR */
   .site-nav {
     position: fixed;
@@ -519,10 +595,7 @@
     letter-spacing: 1px;
     white-space: nowrap;
   }
-  .site-nav-links {
-    display: flex;
-    gap: 4px;
-  }
+  .site-nav-links { display: flex; gap: 4px; }
   .nav-btn {
     display: flex;
     align-items: center;
@@ -539,27 +612,13 @@
     transition: all 0.2s;
     white-space: nowrap;
   }
-  .nav-btn:hover {
-    color: var(--paper);
-    background: rgba(255,255,255,0.08);
-  }
-  .nav-btn.active {
-    background: var(--gold);
-    color: var(--ink);
-    font-weight: 600;
-    border-color: var(--gold);
-  }
+  .nav-btn:hover { color: var(--paper); background: rgba(255,255,255,0.08); }
+  .nav-btn.active { background: var(--gold); color: var(--ink); font-weight: 600; border-color: var(--gold); }
 
   /* PAGE SECTIONS */
   body { padding-top: 52px; }
   .page-section { display: none; }
   .page-section.active { display: block; }
-
-  @media (max-width: 500px) {
-    .site-nav { padding: 0 12px; }
-    .site-nav-logo { font-size: 11px; }
-    .nav-btn { padding: 6px 12px; font-size: 12px; }
-  }
 
 </style>
 </head>
