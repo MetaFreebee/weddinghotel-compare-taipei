@@ -547,19 +547,19 @@
     /* BADGES */
     .badge { font-size: 10px; padding: 3px 7px; }
 
-    /* SUMMARY TABLE - guest page (7 cols) */
-    /* Make tables horizontally scrollable */
+    /* SUMMARY TABLES - horizontal scroll via wrapper */
     .summary-table, .worker-table {
-      display: block;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      white-space: nowrap;
       font-size: 12px;
+      white-space: nowrap;
+      min-width: 100%;
     }
-    .summary-table thead, .summary-table tbody,
-    .worker-table thead, .worker-table tbody { display: table; width: 100%; }
-    .summary-table td, .summary-table th { padding: 10px 10px; }
-    .worker-table td, .worker-table th { padding: 10px 10px; }
+    .summary-table td, .summary-table th { padding: 9px 10px; }
+    .worker-table td, .worker-table th { padding: 9px 10px; }
+
+    /* Wrap tables in scrollable container */
+    .summary-table, .worker-table {
+      display: table;
+    }
 
     /* WORKER INTRO */
     .worker-intro { padding: 14px 16px; font-size: 12.5px; }
@@ -1027,6 +1027,7 @@
 
   <!-- SUMMARY TABLE -->
   <div class="section-heading">📊 快速比較總覽</div>
+  <div style="overflow-x:auto; -webkit-overflow-scrolling:touch; width:100%;">
   <table class="summary-table">
     <thead>
       <tr>
@@ -1096,6 +1097,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
   <div class="alert" style="margin-top:24px">
     📌 <strong>訂房提示：</strong>標示「實際NT$/晚」為10月1–4日含稅查詢價。「估」為參考估算。△ = 部分房型含/不含，需訂房時確認。訂房時務必選擇<strong>可彈性取消退款</strong>的房型。兄弟大飯店及洛碁系列的彈性取消政策請直接在 Agoda 或官網查詢當期條款。
@@ -1200,7 +1202,7 @@
           <div class="worker-rank">性價比 #2 · 平價商旅</div>
           <div class="worker-name">洛碁大飯店松山館</div>
           <div style="margin-top:6px">
-            <span class="badge badge-green">✓ 捷運10秒</span>
+            <span class="badge badge-green">✓ 捷運1分鐘內</span>
             <span class="badge badge-green">✓ 含早餐</span>
             <span class="badge badge-green">✓ 有浴缸</span>
             <span class="badge badge-amber">⚠ 去婚宴15–18分鐘</span>
@@ -1215,7 +1217,7 @@
       <div class="worker-card-body">
         <div class="worker-col">
           <div class="col-label">地理 & 交通</div>
-          <div class="detail-row"><span class="detail-icon">🚇</span><span>後山埤站3號出口步行 <strong>約10秒</strong>（板南藍線）</span></div>
+          <div class="detail-row"><span class="detail-icon">🚇</span><span>後山埤站3號出口步行 <strong>約1分鐘</strong>（板南藍線）</span></div>
           <div class="detail-row"><span class="detail-icon">🚕</span><span>去文華東方：的士約 <strong>15–18分鐘</strong>（跨區，9間最遠）</span></div>
           <div class="detail-row"><span class="detail-icon">🌙</span><span>饒河街夜市步行10分鐘，部分房型可遠眺101</span></div>
         </div>
@@ -1504,6 +1506,7 @@
 
     <!-- SUMMARY TABLE -->
     <div class="section-heading">📊 9間住宿快速比較（性價比排序）</div>
+    <div style="overflow-x:auto; -webkit-overflow-scrolling:touch; width:100%;">
     <table class="worker-table">
       <thead>
         <tr>
@@ -1528,7 +1531,7 @@
         </tr>
         <tr>
           <td>洛碁松山館</td>
-          <td>10秒</td>
+          <td>1分鐘內</td>
           <td>的士約15–18分鐘</td>
           <td><span class="check">✓</span></td>
           <td>NT$2,798</td>
@@ -1600,6 +1603,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <div class="alert" style="margin-top:24px">
       📌 <strong>溫馨提示：</strong>工作人員若需在婚宴前彩排或準備，建議提前確認抵達時間。ILLUME 及慶城館均步行可達婚宴場地，去程無需搭的士。所有估算價格以國慶假期實際查詢為準。
